@@ -5,3 +5,22 @@
     "prisma": "^6.8.2"
   }
 }
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "y",
+  "version": "1.0.0",
+  "description": "hello",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "express"
+  },
+  "author": "",
+  "license": "ISC"
+}
