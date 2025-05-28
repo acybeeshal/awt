@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <title>java script concept</title>
+</head>
+
+<body>
+    <p id="dem"></p>
+    <script>
+
+        // function functionName() {
+        //     const value = "something";
+        //     return value;
+        // }
+
+        let x = myFunction( 1,4);
+        
+        document.getElementById("dem").innerHTML = x;
+        function myFunction(a, b) {
+            return a * b;
+        }
+
+        function boolFunction() {
+            const value = true;
+            return value;
+        }
+
+        function numFunction(){
+            const roll=1;
+            return roll;
+        }
+        function group(){
+            const roll=1;
+            if (roll<20){
+                return "Group A";
+            }
+            // elseif {
+            //     return "Group B";
+            // } or 
+            return "Group B";
+        }
+
+        function loaliy_points(){
+        const purchaseAmount=300;
+            return (0.10 * purchaseAmount)
+        }
+    </script>
+</body>
+
+</html>
