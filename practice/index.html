@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p>this is paragraph </p>
     <h1>this is heading 1 </h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvjU4YPjwggKZFQ6oO9jhPWruiY8SiVmOjw&s" 
-     alt="flower">
-     <h2 name="title">testing heading</h2>
-     <form action="https://www.google.com">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvjU4YPjwggKZFQ6oO9jhPWruiY8SiVmOjw&s"
+        alt="flower">
+    <h2 name="title">testing heading</h2>
+    <form id="studentForm">
         <label for="name">Name</label>
-        <input name="name" type="text"/>
-        <label for="search">Search here to search on google </label>
+        <input name="name" type="text" placeholder="enter your name" id="firstName" />
+        <label for="rollNo">Roll No</label>
+        <input name="rollNo" type="number" placeholder="enter your roll" id="rollNo"/>
+        <label for=" search">Search here to search on google </label>
         <input name="search" type="text">
         <button type="submit">Submit</button>
-     </form>
-     <a href="https://www.google.com">Login </a>
-     <a href="https://www.google.com">Register </a>
+    </form>
+    <a href="https://www.google.com">Login </a>
+    <a href="https://www.google.com">Register </a>
+
+    <script>
+        const student = {
+            name: "Abc",
+            roll: 1,
+            hobbies: [
+                "reading",
+                "cycling",
+            ]
+        }
+var students=[];
+        console.log(student.hobbies[0]);
+
+
+        const studentForm = document.getElementById("studentForm");
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const firstName = document.getElementById("firstName");
+            const rollNo = document.getElementById("rollNo");
+            const newStudent = {
+                name: firstName.value,
+                rooll: rollNo.value
+            }
+            students.push(newStudent);
+              console.log(student);
+        }
+        studentForm.addEventListener("submit", handleSubmit);
+
+
+    </script>
 
 </body>
+
 </html>

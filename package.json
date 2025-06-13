@@ -2,11 +2,7 @@
   "dependencies": {
     "@prisma/client": "^6.8.2",
     "better-sqlite3": "^11.10.0",
-    "prisma": "^6.8.2"
-  }
-}
-{
-  "dependencies": {
+    "prisma": "^6.8.2",
     "express": "^5.1.0"
   },
   "name": "y",
